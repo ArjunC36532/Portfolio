@@ -68,6 +68,47 @@
     color: #007bff;
   }
   
+  /* Tech Stack */
+  .tech-stack {
+    margin-top: 1rem;
+  }
+  
+  .tech-stack h4 {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .tech-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .tech-item {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #f8f9fa;
+    padding: 0.5rem 0.75rem;
+    border-radius: 20px;
+    border: 1px solid #e9ecef;
+  }
+  
+  .tech-logo {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+  
+  .tech-item span {
+    font-size: 0.85rem;
+    color: #495057;
+    font-weight: 500;
+  }
+  
   /* Skills */
   .skills ul {
     display: flex;
