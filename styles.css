@@ -109,6 +109,77 @@
     font-weight: 500;
   }
   
+  /* Project Links */
+  .project-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .project-link-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+  }
+  
+  .project-link-item:hover {
+    background-color: #0056b3;
+  }
+  
+  .link-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+  }
+  
+  /* Blog */
+  .blog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .blog-post {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-left: 4px solid #007bff;
+  }
+  
+  .blog-post h3 {
+    margin-bottom: 0.5rem;
+    color: #007bff;
+  }
+  
+  .blog-post .date {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .blog-post p {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .blog-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .blog-link:hover {
+    color: #0056b3;
+  }
+  
   /* Skills */
   .skills ul {
     display: flex;
