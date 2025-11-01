@@ -53,6 +53,23 @@ header .date {
   font-weight: 400;
 }
 
+.resume-link {
+  display: inline-block;
+  margin-left: 1rem;
+  padding: 0.5rem 1.5rem;
+  background: #2c3e50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.resume-link:hover {
+  background: #34495e;
+}
+
 /* Main Content */
 main {
   margin: 3rem 0;
