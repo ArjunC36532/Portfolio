@@ -4,32 +4,62 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Arjun | CS Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="scanlines"></div>
+  <div class="vignette"></div>
+  <div class="floating-particles">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <nav>
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo">A.C.</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+      </div>
+    </div>
+  </nav>
+
   <header>
     <div class="container">
-      <h1>Arjun Chaudhary</h1>
-      <p>Second Year Computer Science Student | Aspiring Software Engineer</p>
-      <a href="Arjun_Chaudhary_SWE_Resume.pdf" class="resume-link" target="_blank" download="Arjun_Chaudhary_SWE_Resume.pdf">View Resume</a>
+      <div class="christmas-lights">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <h1 class="hero-title">Arjun Chaudhary</h1>
+      <p class="hero-subtitle">Second Year Computer Science Student<br>Aspiring Software Engineer</p>
+      <a href="Arjun_Chaudhary_SWE_Resume.pdf" class="btn-retro" target="_blank" download="Arjun_Chaudhary_SWE_Resume.pdf">[ View Resume ]</a>
     </div>
   </header>
 
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <h2>About Me</h2>
       <p>Hi! I'm Arjun Chaudhary, a second-year Computer Science student and honors student at Barrett, The Honors College at Arizona State University. I have experience in full-stack development, AI/ML systems, and team leadership utilizing technologies including React, FastAPI, and Express.js to develop efficient full-stack applications. Currently working on backend systems for a medical resource allocation software for Mayo Clinic, I'm actively searching for <strong>Summer 2026 internships</strong> in software engineering, AI/ML, or full-stack development. Feel free to reach out if you'd like to connect!</p>
     </div>
   </section>
 
-  <section class="experience">
+  <section class="experience" id="experience">
     <div class="container">
       <h2>Experience</h2>
       <div class="experience-timeline">
         <div class="experience-card">
           <div class="experience-header">
             <div class="experience-title">
-              <h3>Backend Software Engineer (Automated Medical Resource Allocation System)</h3>
+              <h3>Backend Software Engineer</h3>
+              <span class="project-name">Automated Medical Resource Allocation System</span>
               <span class="company">EPICS at ASU</span>
             </div>
             <div class="experience-meta">
@@ -64,7 +94,8 @@
         <div class="experience-card">
           <div class="experience-header">
             <div class="experience-title">
-              <h3>Software Development Lead (Dictated Note Printer Project)</h3>
+              <h3>Software Development Lead</h3>
+              <span class="project-name">Dictated Note Printer Project</span>
               <span class="company">EPICS at ASU</span>
             </div>
             <div class="experience-meta">
@@ -128,7 +159,7 @@
     </div>
   </section>
 
-  <section class="projects">
+  <section class="projects" id="projects">
     <div class="container">
       <h2>Projects</h2>
       <div class="project-list">
@@ -136,61 +167,36 @@
           <h3>ECMO Bridge 2.0</h3>
           <p>Facilitating physician-to-physician communication for ECMO machine coordination and patient care across healthcare institutions in partnership with Mayo Clinic.</p>
           <div class="tech-stack">
-            <h4>Tech Stack:</h4>
+            <h4>Tech Stack</h4>
             <div class="tech-items">
-              <div class="tech-item">
-                <img src="logos/react-logo.png" alt="React" class="tech-logo">
-                <span>React</span>
-              </div>
-              <div class="tech-item">
-                <img src="logos/fastapi-logo.svg" alt="FastAPI" class="tech-logo">
-                <span>Next.js</span>
-              </div>
-              <div class="tech-item">
-                <img src="logos/fastapi-logo.svg" alt="FastAPI" class="tech-logo">
-                <span>FastAPI</span>
-              </div>
+              <div class="tech-item"><span>React</span></div>
+              <div class="tech-item"><span>Next.js</span></div>
+              <div class="tech-item"><span>FastAPI</span></div>
             </div>
           </div>
           <div class="project-links">
             <a href="https://www.ecmobridge.com/" class="project-link-item" target="_blank">
-              <img src="logos/github-logo.svg" alt="Website" class="link-icon">
               <span>Live Website</span>
             </a>
           </div>
         </div>
         <div class="project-card">
           <h3>AI Attendance Tracker</h3>
-          <p>An AI powered student attendance tracker. 
-              Allows teachers to track attendance of students entering a classroom via webcam.</p>
+          <p>An AI powered student attendance tracker. Allows teachers to track attendance of students entering a classroom via webcam.</p>
           <div class="tech-stack">
-            <h4>Tech Stack:</h4>
+            <h4>Tech Stack</h4>
             <div class="tech-items">
-              <div class="tech-item">
-                <img src="logos/react-logo.png" alt="React" class="tech-logo">
-                <span>React</span>
-              </div>
-              <div class="tech-item">
-                <img src="logos/fastapi-logo.svg" alt="FastAPI" class="tech-logo">
-                <span>FastAPI</span>
-              </div>
-              <div class="tech-item">
-                <img src="logos/opencv-logo.png" alt="OpenCV" class="tech-logo">
-                <span>OpenCV</span>
-              </div>
-              <div class="tech-item">
-                <img src="logos/pytorch-logo.png" alt="PyTorch" class="tech-logo">
-                <span>PyTorch</span>
-              </div>
+              <div class="tech-item"><span>React</span></div>
+              <div class="tech-item"><span>FastAPI</span></div>
+              <div class="tech-item"><span>OpenCV</span></div>
+              <div class="tech-item"><span>PyTorch</span></div>
             </div>
           </div>
           <div class="project-links">
             <a href="https://youtu.be/o3oHNKd0WnE" class="project-link-item" target="_blank">
-              <img src="logos/youtube-logo.png" alt="YouTube" class="link-icon">
               <span>Project Demo</span>
             </a>
             <a href="https://github.com/ArjunC36532/AttendanceTracker" class="project-link-item" target="_blank">
-              <img src="logos/github-logo.svg" alt="GitHub" class="link-icon">
               <span>Source Code</span>
             </a>
           </div>
@@ -199,29 +205,18 @@
           <h3>Sleep Sense</h3>
           <p>An easy way for users to track their sleep and health metrics. Uses a machine learning model to warn users of potential sleep disorders.</p>
           <div class="tech-stack">
-            <h4>Tech Stack:</h4>
+            <h4>Tech Stack</h4>
             <div class="tech-items">
-              <div class="tech-item">
-                <img src="logos/react-logo.png" alt="React" class="tech-logo">
-                <span>React</span>
-              </div>
-              <div class="tech-item">
-                <img src="logos/fastapi-logo.svg" alt="FastAPI" class="tech-logo">
-                <span>FastAPI</span>
-              </div>
-              <div class="tech-item">
-                <img src="logos/scikit-learn-logo.png" alt="Scikit-learn" class="tech-logo">
-                <span>Scikit-learn</span>
-              </div>
+              <div class="tech-item"><span>React</span></div>
+              <div class="tech-item"><span>FastAPI</span></div>
+              <div class="tech-item"><span>Scikit-learn</span></div>
             </div>
           </div>
           <div class="project-links">
             <a href="https://youtu.be/OKxoa90-674" class="project-link-item" target="_blank">
-              <img src="logos/youtube-logo.png" alt="YouTube" class="link-icon">
               <span>Project Demo</span>
             </a>
             <a href="https://github.com/ArjunC36532/SleepSense" class="project-link-item" target="_blank">
-              <img src="logos/github-logo.svg" alt="GitHub" class="link-icon">
               <span>Source Code</span>
             </a>
           </div>
@@ -230,34 +225,22 @@
           <h3>Braille Translator</h3>
           <p>Minimalist interface allowing users to translate voice into braille output within seconds.</p>
           <div class="tech-stack">
-            <h4>Tech Stack:</h4>
+            <h4>Tech Stack</h4>
             <div class="tech-items">
-              <div class="tech-item">
-                <img src="logos/react-logo.png" alt="React" class="tech-logo">
-                <span>React</span>
-              </div>
-              <div class="tech-item">
-                <img src="logos/express-logo.png" alt="Express.js" class="tech-logo">
-                <span>Express.js</span>
-              </div>
-              <div class="tech-item">
-                <img src="logos/openai-logo.webp" alt="OpenAI" class="tech-logo">
-                <span>OpenAI</span>
-              </div>
+              <div class="tech-item"><span>React</span></div>
+              <div class="tech-item"><span>Express.js</span></div>
+              <div class="tech-item"><span>OpenAI</span></div>
             </div>
           </div>
           <div class="project-links">
             <a href="https://youtu.be/yJddlM3YdjA" class="project-link-item" target="_blank">
-              <img src="logos/youtube-logo.png" alt="YouTube" class="link-icon">
               <span>Project Demo</span>
             </a>
             <a href="https://github.com/ArjunC36532/BrailleTranslator" class="project-link-item" target="_blank">
-              <img src="logos/github-logo.svg" alt="GitHub" class="link-icon">
-              <span>Frontend Source Code</span>
+              <span>Frontend Code</span>
             </a>
             <a href="https://github.com/ArjunC36532/braille-backend-code" class="project-link-item" target="_blank">
-              <img src="logos/github-logo.svg" alt="GitHub" class="link-icon">
-              <span>Backend Source Code</span>
+              <span>Backend Code</span>
             </a>
           </div>
         </div>
@@ -265,7 +248,7 @@
     </div>
   </section>
 
-  <section class="skills">
+  <section class="skills" id="skills">
     <div class="container">
       <h2>Skills</h2>
       <div class="skills-categories">
@@ -323,9 +306,55 @@
 
   <footer>
     <div class="container">
-      <p>Reach me at: <a href="mailto:arjunc3652@email.com">arjunc3652@gmail.com</a></p>
+      <div class="footer-glow"></div>
+      <p class="footer-tagline">// friends don't lie, but code does sometimes</p>
+      <p>Reach me at: <a href="mailto:arjunc3652@gmail.com">arjunc3652@gmail.com</a></p>
       <p>&copy; 2025 Arjun Chaudhary</p>
     </div>
   </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+        }
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('section, .experience-card, .project-card, .skill-category').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+
+    const title = document.querySelector('.hero-title');
+    function flicker() {
+      const r = Math.random();
+      if (r > 0.95) {
+        title.style.opacity = '0.7';
+        setTimeout(() => {
+          title.style.opacity = '1';
+          setTimeout(() => {
+            title.style.opacity = '0.85';
+            setTimeout(() => { title.style.opacity = '1'; }, 80);
+          }, 60);
+        }, 50);
+      }
+      setTimeout(flicker, Math.random() * 3000 + 2000);
+    }
+    flicker();
+
+    let lastScroll = 0;
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      const current = window.scrollY;
+      if (current > 100) {
+        nav.classList.add('nav-scrolled');
+      } else {
+        nav.classList.remove('nav-scrolled');
+      }
+      lastScroll = current;
+    });
+  </script>
 </body>
 </html>
